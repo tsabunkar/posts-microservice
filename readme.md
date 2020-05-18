@@ -3,6 +3,7 @@
 - Posts:
   - Create a Post
   - List all Posts
+  - [assets/post-services.png]
 - Comments:
   - Create a comment
   - List all comments
@@ -26,9 +27,11 @@
 - mkdir posts
 - cd posts
 - npm init -y
-- npm i express cors axios
+- npm i express cors axios body-parser
+- npm i -D nodemon
 - cd ..
 - mkdir comments
 - cd comments
 - npm init -y
-- npm i express cors axios
+- npm i express cors axios body-parser
+- npm i -D nodemon
