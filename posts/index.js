@@ -18,12 +18,13 @@ app.post('/posts', (req, resp) => {
   // !generating random and unique userId
   const id = randomBytes(4).toString('hex');
   const { title } = req.body;
+  console.log(title);
   posts[id] = {
     id,
     title,
   };
-
-  resp.send(201).send(posts[id]);
+  console.log('Response', posts);
+  resp.status(201).send(posts[id]);
 });
 
 app.listen(4000, () => {
