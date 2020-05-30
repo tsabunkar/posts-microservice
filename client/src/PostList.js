@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './PostList.css';
 import CommentCreate from './CommentCreate';
+import CommentList from './CommentList';
 
-export default () => {
+export default function PostList() {
   const [posts, setPosts] = useState({});
 
   const fetchPosts = async () => {
@@ -28,16 +30,18 @@ export default () => {
         key={post.id}
       >
         {/* key={post.id} --> React expect use to give unique value for this key */}
-        <div className="card-body">
+        <div className="card-body card-color">
           <h3 style={{ color: 'black' }}>{post.title}</h3>
+          <CommentList postId={post.id} />
           <CommentCreate postId={post.id} />
         </div>
       </div>
     );
   });
+
   return (
     <div className="d-flex flex-row flex-wrap justify-content-between">
       {renderedPosts}
     </div>
   );
-};
+}

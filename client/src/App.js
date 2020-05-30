@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-        <h1>Create Post</h1>
+        <h1>Post Create</h1>
         <PostCreate />
       </div>
       <hr className="light-color" />
