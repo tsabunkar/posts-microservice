@@ -2,11 +2,13 @@ const express = require('express');
 // built-in libr --> crypto
 const { randomBytes } = require('crypto');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const app = express();
 
 // !using middleware
 app.use(bodyParser.json());
+app.use(cors());
 
 const posts = {}; // { '23he9j': {id: '23he9j', title: 'first Posts'}, .....}
 

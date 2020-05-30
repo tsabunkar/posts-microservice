@@ -1,11 +1,13 @@
 const express = require('express');
 const { randomBytes } = require('crypto');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const app = express();
 
 // !using middleware
 app.use(bodyParser.json());
+app.use(cors());
 
 const commentsByPostId = {}; // each key has array of comments
 
