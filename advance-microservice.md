@@ -204,3 +204,7 @@
 - Transaction log tailing
 - Database triggers
 - Application events
+
+---
+
+- circuit breaker
