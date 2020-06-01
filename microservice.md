@@ -74,3 +74,40 @@
   - Conceptually tricky to understand
 
 ---
+
+# Problem with Monolithic Applications
+
+- No frequent and easy release
+- Inadequate support for a continous delvery
+- Team and project management is difficult (team dependencies)
+- High cost for scalability and performance
+- Minimal technology diversity
+- Less portable bcoz tightly coupled
+
+## Forcing Driving Microservice Adoption
+
+- Need new team members to become quickly productive
+- Easy to understand and modify applications
+- Practice Continous Deployment
+- Run multiple application copies on multiple machines for scalability and availability
+- Take advantage of emerging technologies such as frameworks, programming language
+
+# Microservices Benefits
+
+- Microservices are relatively small
+  - Easier to understand
+  - Faster IDE - increasing productivity
+  - Applications starts faster - speeding up deployments
+- Easier-to-scale development
+- Improved fault isolation
+- Can be deployed independently
+- No long-term commitment to a technology stack
+
+# Microservices Challenges
+
+- Complex distributed system
+- IDEs do not support distributed applications development, bcoz developer tools/IDE are oriented on building monolithic applications with no explicit support for developing distributed applications.
+- Testing Complexity (Integeration testing)
+- Developers must implement the inter-service communication mechanism
+- Multipe services use case implementation without using distrbuted transactions
+- Implementing use cases that span multiple service requires careful coordination between the team.
