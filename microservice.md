@@ -111,3 +111,41 @@
 - Developers must implement the inter-service communication mechanism
 - Multipe services use case implementation without using distrbuted transactions
 - Implementing use cases that span multiple service requires careful coordination between the team.
+
+---
+
+# Data Consistency
+
+- Data consistency
+
+  - Atomicity
+  - Consistency
+  - Isolation
+  - Durability
+
+- CAP Theorem : Consistency, Availability and Partition
+
+  - Consistency: Every read gets us the most recent write
+  - Availability: Every node (if not failed) always executes queries
+  - Partition tolerance: When connections between nodes are down, the other two (A and C) promises are kept
+  - [assets/data-consistency.png]
+  - NOTE : no db (sql or nosql) uptill now can claim that it can provide all the - Consistency, Availability and Partition in CAP theorem
+
+- Data Consistency in Microservice architecture
+  - Strong consistency is hard in distributed services
+  - Even harder with microservices as they own their data
+  - Strong consistency only inside a microservice
+  - Dependency on the data schema
+  - Dependency on the actual collected data
+- [assets/data-consistency-microservice.png]
+- Data consistency Types:
+  1. Strong consistency:
+  - Subsequent accesses to a distributed system always return the updated value
+  2. Weak consistency:
+  - Used in distributed computing where Subsequent accesses do not always return an updated value
+  - Inconsistent responses
+  3. Eventual consistency
+  - Special type of weak consistency method
+  - Guarantees last update value return if no new updates are made to a given data item.
+
+---
