@@ -12,9 +12,10 @@ function CommentList({ postId }) {
     setComments(resp.data);
   };
 
-  // To call one time in the comment so using this life cycle hook
+  // !To call one time in the comment so using this life cycle hook
   useEffect(() => {
     fetchComments();
+    // eslint-disable-next-line
   }, []);
 
   console.log('comments', comments);

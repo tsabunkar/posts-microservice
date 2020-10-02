@@ -1,7 +1,7 @@
 # Problem with Monolithic Applications
 
 - No frequent and easy release
-- Inadequate support for a continous delvery
+- Inadequate support for a continous delivery
 - Team and project management is difficult (team dependencies)
 - High cost for scalability and performance
 - Minimal technology diversity
